@@ -1,0 +1,25 @@
+body {
+  background: url("./assets/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.form-container {
+  position: relative;
+  padding: 20px;
+  animation: backgroundFlow 10s infinite linear alternate;
+}
+
+@keyframes backgroundFlow {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
