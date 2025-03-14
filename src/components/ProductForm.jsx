@@ -115,7 +115,7 @@ const ProductForm = () => {
                 <Carousel>
                   {previewImages.map((img, index) => (
                     <Carousel.Item key={index}>
-                      <img className="d-block w-100" src={img} alt={`Slide ${index}`} />
+                      <img className="d-block " src={img} alt={`Slide ${index}`}   style={{ width: "120px", height: "120px", objectFit: "cover", margin: "auto" }} />
                     </Carousel.Item>
                   ))}
                 </Carousel>
